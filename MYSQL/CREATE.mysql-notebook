@@ -2,7 +2,7 @@
     "type": "MySQLNotebook",
     "version": "1.0",
     "caption": "Script",
-    "content": "CREATE DATABASE IF NOT EXISTS COMPANY;\r\n\r\nCREATE DATABASE DEMO;\r\n\r\nSHOW DATABASES;",
+    "content": "CREATE DATABASE IF NOT EXISTS COMPANY;\n\nCREATE DATABASE IF NOT EXISTS DEMO;\n\nSHOW DATABASES;",
     "options": {
         "tabSize": 4,
         "indentSize": 4,
@@ -20,11 +20,13 @@
                 "result": {
                     "type": "resultIds",
                     "list": [
-                        "a6bf143f-cf5e-443d-967d-8d25b7a7e425"
+                        "667c42d9-2109-45ae-ff59-26fe8f3be67a",
+                        "1b99c993-5065-4806-dd72-f4c3ad35d236",
+                        "5cce95d2-a1bf-4895-c899-42d2c90831e2"
                     ]
                 },
                 "currentHeight": 300,
-                "currentSet": 1,
+                "currentSet": 0,
                 "statements": [
                     {
                         "delimiter": ";",
@@ -39,35 +41,26 @@
                         "delimiter": ";",
                         "span": {
                             "start": 38,
-                            "length": 24
+                            "length": 37
                         },
                         "contentStart": 40,
-                        "state": 3
-                    },
-                    {
-                        "delimiter": ";",
-                        "span": {
-                            "start": 62,
-                            "length": 1
-                        },
-                        "contentStart": 62,
                         "state": 0
                     },
                     {
                         "delimiter": ";",
                         "span": {
-                            "start": 63,
-                            "length": 19
+                            "start": 75,
+                            "length": 17
                         },
-                        "contentStart": 65,
+                        "contentStart": 77,
                         "state": 0
                     }
                 ]
             },
             "data": [
                 {
-                    "tabId": "dcd9b3d1-4899-476f-9114-f7b119c461f4",
-                    "resultId": "a6bf143f-cf5e-443d-967d-8d25b7a7e425",
+                    "tabId": "c615969d-9ca2-4172-815e-53103ca3a8b8",
+                    "resultId": "667c42d9-2109-45ae-ff59-26fe8f3be67a",
                     "rows": [
                         {
                             "0": "company"
@@ -109,13 +102,65 @@
                         }
                     ],
                     "executionInfo": {
-                        "text": "OK, 6 records retrieved in 3.195ms"
+                        "text": "OK, 6 records retrieved in 0.92ms"
                     },
                     "totalRowCount": 6,
                     "hasMoreRows": false,
                     "currentPage": 0,
+                    "index": 2,
+                    "sql": "\n\nSHOW DATABASES",
+                    "updatable": false
+                },
+                {
+                    "tabId": "c615969d-9ca2-4172-815e-53103ca3a8b8",
+                    "resultId": "1b99c993-5065-4806-dd72-f4c3ad35d236",
+                    "rows": [],
+                    "columns": [
+                        {
+                            "title": "*",
+                            "field": "0",
+                            "dataType": {
+                                "type": 0
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 1 row affected in 3.205ms"
+                    },
+                    "totalRowCount": 0,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
                     "index": 0,
-                    "sql": "\n\nSHOW DATABASES;",
+                    "sql": "CREATE DATABASE IF NOT EXISTS COMPANY",
+                    "updatable": false
+                },
+                {
+                    "tabId": "c615969d-9ca2-4172-815e-53103ca3a8b8",
+                    "resultId": "5cce95d2-a1bf-4895-c899-42d2c90831e2",
+                    "rows": [],
+                    "columns": [
+                        {
+                            "title": "*",
+                            "field": "0",
+                            "dataType": {
+                                "type": 0
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 1 row affected in 1.881ms"
+                    },
+                    "totalRowCount": 0,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 1,
+                    "sql": "\n\nCREATE DATABASE IF NOT EXISTS DEMO",
                     "updatable": false
                 }
             ]
