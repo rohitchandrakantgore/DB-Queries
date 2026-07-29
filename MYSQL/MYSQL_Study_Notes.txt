@@ -1,0 +1,44 @@
+MySQL Study Notes
+=================
+
+What we have learned so far:
+- Database creation using CREATE DATABASE
+- Using a database with USE
+- Creating tables with CREATE TABLE
+- Adding primary keys and foreign keys
+- Inserting data using INSERT INTO
+- Selecting data using SELECT
+- Filtering rows using WHERE
+- Removing duplicates using DISTINCT
+- Sorting rows using ORDER BY
+- Limiting results using LIMIT
+- Grouping rows using GROUP BY
+- Filtering grouped results using HAVING
+- Altering table structure using ALTER TABLE
+- Renaming columns and tables
+- Adding, modifying, and dropping columns
+- Setting default values for columns
+- Creating table copies using AS SELECT and LIKE
+- Truncating tables using TRUNCATE
+
+Things remaining to learn:
+- Joins (INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN)
+- Subqueries
+- UNION and UNION ALL
+- CASE statements
+- NULL handling
+- Constraints (CHECK, DEFAULT, UNIQUE, NOT NULL in more depth)
+- Indexes
+- Views
+- Stored procedures
+- Functions
+- Triggers
+- Transactions (START TRANSACTION, COMMIT, ROLLBACK)
+- Backup and restore
+- Normalization
+- CRUD operations in more advanced forms
+- MySQL functions (STRING, DATE, NUMERIC)
+- Aggregation functions in more detail
+- Window functions
+- Performance tuning
+- Security and user permissions
