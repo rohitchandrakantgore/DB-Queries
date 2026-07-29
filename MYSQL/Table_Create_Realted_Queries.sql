@@ -1,12 +1,26 @@
 /*
 Simple MySQL guide for creating tables, inserting records, and viewing data.
 
-Focus:
+Purpose of this file:
 - Create a database
+- Use the database
 - Create tables
 - Insert sample data
 - Show table structure
 - Show stored data
+
+Commands used in this file and their purpose:
+- CREATE DATABASE: creates a new database
+- USE: selects the database to work in
+- CREATE TABLE: creates a new table
+- PRIMARY KEY: identifies each row uniquely
+- NOT NULL: prevents empty values in a column
+- UNIQUE: ensures values in a column are different
+- FOREIGN KEY: links one table to another
+- INSERT INTO ... VALUES: adds new rows to a table
+- SELECT: reads data from one or more tables
+- DESCRIBE: shows the structure of a table
+- SHOW TABLES: lists all tables in the current database
 
 How to use this file:
 1. Make sure your MySQL server is running.
