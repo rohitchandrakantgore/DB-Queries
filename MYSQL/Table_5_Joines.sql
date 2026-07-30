@@ -1,6 +1,9 @@
 /*
 Joins in SQL are used to combine rows from two or more tables.
 
+This file demonstrates common join types using the Employee and Employer tables.
+Run it after the create/insert script so the sample data is already available.
+
 Types of joins:
 - INNER JOIN: returns only matching rows from both tables.
 - LEFT JOIN: returns all rows from the left table and matching rows from the right.
