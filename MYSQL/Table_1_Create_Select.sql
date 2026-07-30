@@ -69,15 +69,24 @@ CREATE TABLE IF NOT EXISTS Employee (
 INSERT INTO Employer (ID, Name, Address, PhoneNumber, Email, EstablishedDate, Industry)
 VALUES
     (1, 'Tech Solutions Inc.', '123 Tech Street, Silicon Valley, CA', '123-456-7890', 'info@techsolutions.com', '2020-01-01', 'Technology'),
-    (2, 'Green Energy Corp.', '456 Green Avenue, Austin, TX', '987-654-3210', 'info@greenenergy.com', '2019-06-15', 'Renewable Energy');
+    (2, 'Green Energy Corp.', '456 Green Avenue, Austin, TX', '987-654-3210', 'info@greenenergy.com', '2019-06-15', 'Renewable Energy'),
+    (3, 'Blue Ocean Logistics', '789 Harbor Road, Seattle, WA', '555-123-4567', 'hr@blueocean.com', '2018-11-10', 'Logistics'),
+    (4, 'Northwind Retail', '321 Market Street, Chicago, IL', '555-765-4321', 'contact@northwindretail.com', '2015-03-05', 'Retail'),
+    (5, 'City Medical Center', '654 Health Avenue, Denver, CO', '555-222-1111', 'careers@citymedical.com', '2012-08-12', 'Healthcare');
 
--- Insert sample data into Employee table
+-- Insert more varied sample data into Employee table
 INSERT INTO Employee (ID, EmployerID, FirstName, LastName, Position, Salary, HireDate)
 VALUES
     (1, 1, 'John', 'Doe', 'Software Engineer', 75000.00, '2020-01-15'),
     (2, 1, 'Jane', 'Smith', 'Project Manager', 85000.00, '2020-03-20'),
     (3, 2, 'Bob', 'Johnson', 'Energy Consultant', 65000.00, '2019-07-10'),
-    (4, 2, 'Alice', 'Williams', 'Sustainability Specialist', 70000.00, '2019-09-25');
+    (4, 2, 'Alice', 'Williams', 'Sustainability Specialist', 70000.00, '2019-09-25'),
+    (5, 3, 'Sarah', 'Lee', 'Operations Manager', 72000.00, '2021-02-01'),
+    (6, 3, 'Michael', 'Brown', 'Logistics Analyst', 62000.00, '2022-06-15'),
+    (7, 4, 'Emily', 'Davis', 'Sales Associate', 48000.00, '2021-09-01'),
+    (8, 4, 'Daniel', 'Martinez', 'Store Manager', 55000.00, '2020-11-20'),
+    (9, 5, 'Priya', 'Patel', 'Nurse', 68000.00, '2018-04-10'),
+    (10, NULL, 'Chris', 'Wilson', 'Freelance Consultant', 54000.00, '2023-01-05');
 
 -- View all tables in the current database
 SHOW TABLES;
@@ -156,3 +165,4 @@ DESCRIBE Department;
 
 -- Show the data inside the new table
 SELECT * FROM Department;
+
